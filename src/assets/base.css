@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--color-dark-navy);
+  /* color: var(--color-text);
+  background: var(--color-background); */
+  /* transition:
+    color 0.5s,
+    background-color 0.5s; */
+  line-height: 1.6;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'Storytail';
+  src: url('../../public/Storytail.ttf') format('truetype'),
+       url('../../public/Storytail.otf') format('opentype');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}

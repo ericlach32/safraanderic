@@ -59,6 +59,12 @@
   gap: 16px;
 }
 
+@media (min-width: 768px) {
+  .header__nav {
+    gap: 24px;
+  }
+}
+
 .header__nav a {
   font-family: "Garamond", serif;
   font-weight: 700;

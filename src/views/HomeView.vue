@@ -6,7 +6,7 @@ import Hero from '../components/Hero.vue'
   <main>
     <div class="container">
       <Hero
-        heading="Eric and Safra"
+        heading="Safra and Eric"
         subheading="2026"
         imageUrl="/stonefields-2.jpg"
         imageAlt="Stonefields Estate"

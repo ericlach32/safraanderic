@@ -8,13 +8,14 @@ import Hero from '../components/Hero.vue'
       <Hero
         heading="Safra and Eric"
         subheading="2026"
-        imageUrl="/stonefields-2.jpg"
-        imageAlt="Stonefields Estate"
-        imageMobileUrl="/stonefields-3.jpg"
-        imageMobileAlt="Stonefields Estate"
+        imageUrl="/safra-and-eric-hero-d.jpg"
+        imageAlt="Safra and Eric"
+        imageMobileUrl="/safra-and-eric-hero-m.jpg"
+        imageMobileAlt="Safra and Eric"
         :fullHeight="true"
         mobilePosition="bottom"
         desktopPosition="right"
+        customClass="hero--stairs"
       />
     </div>
   </main>

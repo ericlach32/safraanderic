@@ -13,7 +13,7 @@ const props = defineProps({
 
 <template>
   <form
-    action=""
+    action="https://getform.io/f/bvrmmoob"
     method="POST"
     class="form">
 
@@ -43,6 +43,25 @@ const props = defineProps({
           autocomplete="off"
           placeholder="Last Name"
           class="input">
+      </div>
+
+      <div class="input-wrapper">
+        <label for="message" class="visually-hidden">Message</label>
+        <textarea
+          rows="5"
+          name="message"
+          id="message"
+          autocomplete="off"
+          placeholder="Message"
+          class="input"></textarea>
+      </div>
+
+      <div class="input-wrapper">
+        <button
+          type="submit"
+          class="btn">
+          <span>Submit</span>
+        </button>
       </div>
 
     </div>

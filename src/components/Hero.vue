@@ -36,13 +36,18 @@ defineProps({
     type: String,
     required: false,
   },
+  customClass: {
+    type: String,
+    required: false,
+  },
 })
 </script>
 
 <template>
   <div 
-    class="hero" 
+    class="hero"
     :class="[
+      customClass,
       { 'hero--full-height': fullHeight },
       mobilePosition ? `hero--mobile-${mobilePosition}` : 'hero--mobile-center',
       desktopPosition ? `hero--desktop-${desktopPosition}` : 'hero--desktop-center'

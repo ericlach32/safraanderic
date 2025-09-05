@@ -1,53 +1,38 @@
 @import './base.css';
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Galada&family=Lora:ital,wght@0,400..700;1,400..700&family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* Fleur De Leah */
 @import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
+
+/* Cormorant Garamond */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+
+/* Garamond */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 
 :root {
   --header-height: 52px;
-  --color-red: #8f0000;
-  --color-navy: #011638;
-  --color-copper: #933b2b;
-  --color-champagne: #c8b38b;
-  --color-pink: #f1d0b8;
 
-  /* new colors */
-  --color-dark-navy: #101217;
-  --color-dark-red: #580000;
-  --color-light-gold: #F7E6CA;
+  /* Wedding Colors */
+  --color-navy-black: #101217;
+  --color-maroon: #580000;
+  --color-sienna: #904134;
   --color-gold: #BC8410;
+  --color-antique-white: #F7E6CA;
+  --color-champagne: #ECE2DD;
 
-  color: var(--color-light-gold);
+  color: var(--color-antique-white);
 }
 
-/*
-  --color-red: #8f0000;
-  --color-navy: #011638;
-  --color-copper: #933b2b;
-  --color-champagne: #c8b38b;
-  --color-pink: #f1d0b8;
-*/
-
-/*
-  #101217
-  #580000
-  #F7E6CA
-  #BC8410
-*/
-
-/* #D4AF37 */
-/* #1D1C66; */ 
-
 ::selection {
-  background: var(--color-dark-navy);
-  color: var(--color-light-gold);
+  background: var(--color-navy-black);
+  color: var(--color-antique-white);
 }
 
 .container {
   padding: var(--header-height) 24px 0;
   min-height: 100dvh;
   min-height: 100dvh;
-  background-color: var(--color-dark-navy);
+  background-color: var(--color-navy-black);
 }
 
 .container--full {
@@ -66,7 +51,7 @@
   padding: 16px 16px 12px;
   justify-content: center;
   align-items: center;
-  background-color: var(--color-light-gold);
+  background-color: var(--color-antique-white);
 }
 
 .header__nav {
@@ -75,18 +60,18 @@
 }
 
 .header__nav a {
-  font-family: "Galada", serif;
-  font-weight: 400;
+  font-family: "Garamond", serif;
+  font-weight: 700;
   font-style: normal;
   font-size: 24px;
   line-height: 1;
   text-decoration: none;
-  color: var(--color-dark-navy);
+  color: var(--color-navy-black);
 }
 
 .header__nav a.router-link-active {
-  color: var(--color-dark-red);
-  text-decoration: underline;
+  color: var(--color-maroon);
+  /* text-decoration: underline; */
 }
 
 .hero {
@@ -96,7 +81,7 @@
   align-items: center;
   padding: 64px 0;
   min-height: 480px;
-  background-color: var(--color-dark-navy);
+  background-color: var(--color-navy-black);
 }
 
 @media (max-width: 767px) {
@@ -142,8 +127,8 @@
   align-items: center;
   width: 100%;
   padding: 48px 24px;
-  background: var(--color-light-gold);
-  color: var(--color-dark-navy);
+  background: var(--color-antique-white);
+  color: var(--color-navy-black);
   border-radius: 24px;
   text-align: center;
   z-index: 1;
@@ -164,13 +149,10 @@
 
 .hero__content h1 {
   margin-bottom: 12px;
-  /* font-family: "Galada", serif; */
   font-family: "Fleur De Leah", serif;
   font-weight: 400;
   font-style: normal;
-  /* font-size: 48px; */
   font-size: 58px;
-  /* line-height: 1.25; */
   line-height: 1;
 }
 
@@ -181,9 +163,9 @@
 }
 
 .hero__content h2 {
-  color: var(--color-dark-red);
-  font-family: "Galada", serif;
-  font-weight: 400;
+  color: var(--color-maroon);
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
   font-style: normal;
   font-size: 32px;
   line-height: 1;
@@ -216,7 +198,7 @@
   justify-content: center;
   align-items: center;
   padding: 96px 0;
-  font-family: "Cardo", serif;
+  font-family: "Garamond", serif;
 }
 
 .faq__header {
@@ -224,7 +206,7 @@
 }
 
 .faq__header h2 {
-  font-family: "Galada", serif;
+  font-family: "Garamond", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 32px;
@@ -239,7 +221,7 @@
 }
 
 .faq__item {
-  border-bottom: 2px solid var(--color-light-gold);
+  border-bottom: 2px solid var(--color-antique-white);
 }
 
 .faq__question {
@@ -249,11 +231,11 @@
   padding: 24px 0 21px;
   cursor: pointer;
   list-style: none;
-  font-family: "Archivo Narrow", serif;
+  font-family: "Garamond", serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  font-size: 24px;
+  font-size: 26px;
   line-height: 1.2;
 }
 
@@ -279,12 +261,12 @@
 
 .faq__answer {
   padding: 0 0 21px;
-  font-family: "Lora", serif;
+  font-family: "Cormorant Garamond", serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  font-size: 18px;
-  line-height: 1.6;
+  font-size: 24px;
+  line-height: 1.4;
 }
 
 .colors {
@@ -343,7 +325,7 @@
 
 .countdown__timer-time {
   /* min-width: 26px; */
-  font-family: "Galada", serif;
+  font-family: "Garamond", serif;
   font-size: 24px;
   line-height: 24px;
 }
@@ -366,7 +348,7 @@
 }
 
 .form__header h2 {
-  font-family: "Galada", serif;
+  font-family: "Garamond", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 32px;
@@ -389,10 +371,10 @@
   width: 100%;
   padding: 12px 16px;
   border-radius: 8px;
-  border: 2px solid var(--color-light-gold);
-  background-color: var(--color-dark-navy);
-  color: var(--color-light-gold);
-  font-family: "Archivo Narrow", serif;
+  border: 2px solid var(--color-antique-white);
+  background-color: var(--color-navy-black);
+  color: var(--color-antique-white);
+  font-family: "Garamond", serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
@@ -405,7 +387,7 @@
 }
 
 .input::placeholder {
-  color: var(--color-light-gold);
+  color: var(--color-antique-white);
 }
 
 .visually-hidden {

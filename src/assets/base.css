@@ -8,7 +8,7 @@
 
 body {
   min-height: 100vh;
-  background-color: var(--color-dark-navy);
+  background-color: var(--color-navy-black);
   /* color: var(--color-text);
   background: var(--color-background); */
   /* transition:
@@ -16,6 +16,7 @@ body {
     background-color 0.5s; */
   line-height: 1.6;
   font-family:
+    "Garamond"
     Inter,
     -apple-system,
     BlinkMacSystemFont,
@@ -34,11 +35,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Storytail';
   src: url('../../public/Storytail.ttf') format('truetype'),
        url('../../public/Storytail.otf') format('opentype');
   font-display: swap;
   font-weight: normal;
   font-style: normal;
-}
+} */

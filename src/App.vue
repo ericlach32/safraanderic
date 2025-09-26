@@ -1,6 +1,6 @@
 <script setup>
 import { RouterLink, RouterView, useRoute } from 'vue-router'
-import { ref, watch } from 'vue'
+import { ref, watch, onMounted } from 'vue'
 
 const route = useRoute()
 const transitionName = ref('slide-left')
@@ -15,6 +15,16 @@ watch(
     transitionName.value = toIndex < fromIndex ? 'slide-right' : 'slide-left'
   }
 )
+
+function setVh() {
+  const vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+
+onMounted(() => {
+  setVh();
+  window.addEventListener('resize', setVh);
+});
 </script>
 
 <template>

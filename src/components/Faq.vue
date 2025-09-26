@@ -17,10 +17,8 @@ defineProps({
   <details class="faq__item">
     <summary class="faq__question">
       <IconLeaf />
-      {{ question }}
+      <span>{{ question }}</span>
     </summary>
-    <div class="faq__answer">
-      {{ answer }}
-    </div>
+    <div class="faq__answer" v-html="answer"></div>
   </details>
 </template>

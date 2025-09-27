@@ -276,13 +276,13 @@
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 1.4;
 }
 
 @media (min-width: 768px) {
   .image-and-copy__content p {
-    font-size: 24px;
+    font-size: 21px;
   }
 }
 

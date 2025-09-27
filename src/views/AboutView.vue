@@ -1,5 +1,6 @@
 <script setup>
 import Hero from '../components/Hero.vue'
+import ImageAndCopy from '../components/ImageAndCopy.vue'
 import Faq from '../components/Faq.vue'
 import Countdown from '@/components/Countdown.vue';
 import ContactForm from '@/components/ContactForm.vue';
@@ -9,16 +10,28 @@ import ContactForm from '@/components/ContactForm.vue';
   <div class="container">
     <Hero
       heading="About Us"
-      subheading="We tha shit."
-      imageUrl="/aframe-1.jpg"
+      subheading="Now & Forever"
+      imageUrl="/fall-canal.jpg"
       imageAlt="Stonefields Estate"
-      imageMobileUrl="/aframe-3.jpg"
+      imageMobileUrl="/fall-canal.jpg"
       imageMobileAlt="Stonefields Estate"
       :fullHeight="false"
       mobilePosition="top"
       desktopPosition="left"
+      customClass="hero--about"
     />
     <Countdown />
+    <ImageAndCopy
+      heading="Our Story"
+      subheading="We're simply meant to be."
+      copy="<p>You know something? We are really cool and you know it. I know you know it. We're really really cool and you know it. We're really cool and you know it. We're really cool and you know it. I know it, yes I do. We're really cool and you know it. We're unbelievably really cool and you know it. We're <b>really cool</b> and you know it. We're really cool and you know it.</p>"
+      imageUrl="/safra-and-eric-bw.jpg"
+      imageAlt="Safra and Eric"
+      imageMobileUrl="/safra-and-eric-bw.jpg"
+      imageMobileAlt="Safra and Eric"
+      mobilePosition="top"
+      desktopPosition="left"
+    />
     <ContactForm />
     <div class="faq">
       <div class="faq__header">

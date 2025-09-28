@@ -45,18 +45,18 @@ defineProps({
 
 <template>
   <div 
-    class="image-and-copy"
-    :class="[
+    class="image-and-copy">
+    <div
+      class="image-and-copy__container"
+      :class="[
       customClass,
-      { 'image-and-copy--full-height': fullHeight },
-      mobilePosition ? `image-and-copy--mobile-${mobilePosition}` : 'image-and-copy--mobile-center',
-      desktopPosition ? `image-and-copy--desktop-${desktopPosition}` : 'image-and-copy--desktop-center'
-    ]">
-    <div class="image-and-copy__container">
+      mobilePosition ? `image-and-copy__container--mobile-${mobilePosition}` : 'image-and-copy__container--mobile-center',
+      desktopPosition ? `image-and-copy__container--desktop-${desktopPosition}` : 'image-and-copy__container--desktop-center'
+      ]">
       <div class="image-and-copy__content">
         <h2>{{ heading }}</h2>
         <h3>{{ subheading }}</h3>
-        <p v-html="copy"></p>
+        <div v-html="copy"></div>
       </div>
       <div class="image-and-copy__image-wrapper">
         <img 

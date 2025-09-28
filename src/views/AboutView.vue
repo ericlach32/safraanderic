@@ -1,6 +1,7 @@
 <script setup>
 import Hero from '../components/Hero.vue'
 import ImageAndCopy from '../components/ImageAndCopy.vue'
+import ImageCarousel from '../components/ImageCarousel.vue'
 import Faq from '../components/Faq.vue'
 import Countdown from '@/components/Countdown.vue';
 import ContactForm from '@/components/ContactForm.vue';
@@ -21,6 +22,17 @@ import ContactForm from '@/components/ContactForm.vue';
       customClass="hero--about"
     />
     <Countdown />
+    <!-- <ImageAndCopy
+      heading="Our Story"
+      subheading="We're simply meant to be."
+      copy="<p>You know something? We are really cool and you know it. I know you know it. We're really really cool and you know it. We're really cool and you know it. We're really cool and you know it. I know it, yes I do. We're really cool and you know it. We're unbelievably really cool and you know it. We're <b>really cool</b> and you know it. We're really cool and you know it.</p>"
+      imageUrl="/safra-and-eric-bw.jpg"
+      imageAlt="Safra and Eric"
+      imageMobileUrl="/safra-and-eric-bw.jpg"
+      imageMobileAlt="Safra and Eric"
+      mobilePosition="bottom"
+      desktopPosition="right"
+    /> -->
     <ImageAndCopy
       heading="Our Story"
       subheading="We're simply meant to be."
@@ -31,6 +43,12 @@ import ContactForm from '@/components/ContactForm.vue';
       imageMobileAlt="Safra and Eric"
       mobilePosition="top"
       desktopPosition="left"
+    />
+    <ImageCarousel
+      imageUrl="/safra-and-eric-heads.jpg"
+      image2Url="/safra-and-eric-dark-stairs.jpg"
+      image3Url="/safra-and-eric-hands.jpg"
+      imageAlt="Safra and Eric"
     />
     <ContactForm />
     <div class="faq">

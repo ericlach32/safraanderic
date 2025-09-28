@@ -59,7 +59,7 @@ const props = defineProps({
       <div class="input-wrapper">
         <button
           type="submit"
-          class="btn">
+          class="btn btn-1 hover-filled-opacity">
           <span>Submit</span>
         </button>
       </div>

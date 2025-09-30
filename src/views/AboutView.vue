@@ -4,8 +4,8 @@ import Hero from '../components/Hero.vue'
 import ImageAndCopy from '../components/ImageAndCopy.vue'
 import ImageCarousel from '../components/ImageCarousel.vue'
 import Faq from '../components/Faq.vue'
-import Countdown from '@/components/Countdown.vue';
-import ContactForm from '@/components/ContactForm.vue';
+import Countdown from '@/components/Countdown.vue'
+import ContactForm from '@/components/ContactForm.vue'
 
 // Handle smooth scrolling for data-scroll-to links
 onMounted(() => {

@@ -93,23 +93,26 @@ const toggleFaqs = () => {
 }
 
 // Handle smooth scrolling for data-scroll-to links
-onMounted(() => {
-  const scrollToLinks = document.querySelectorAll('[data-scroll-to]')
+const handleScrollToClick = (e) => {
+  e.preventDefault()
+  const targetId = e.target.getAttribute('href')
+  const targetElement = document.querySelector(targetId)
   
-  scrollToLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-      e.preventDefault()
-      const targetId = link.getAttribute('href')
-      const targetElement = document.querySelector(targetId)
-      
-      if (targetElement) {
-        // Use smooth scrolling without router animation conflicts
-        targetElement.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        })
-      }
+  if (targetElement) {
+    // Use smooth scrolling without router animation conflicts
+    targetElement.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
     })
+  }
+}
+
+onMounted(() => {
+  // Use event delegation to handle dynamically rendered links
+  document.addEventListener('click', (e) => {
+    if (e.target.hasAttribute('data-scroll-to')) {
+      handleScrollToClick(e)
+    }
   })
 })
 </script>

@@ -147,6 +147,12 @@ onMounted(() => {
         />
       </div>
     </div>
+    <ImageCarousel
+      imageUrl="/safra-and-eric-ny-3.jpg"
+      image2Url="/safra-and-eric-ny-2.jpg"
+      image3Url="/safra-and-eric-ny-4.jpg"
+      imageAlt="Safra and Eric"
+    />
     <ContactForm />
   </div>
 </template>

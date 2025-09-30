@@ -143,7 +143,7 @@ onMounted(() => {
         />
         <Faq 
           question="I have a question not answered here; how do I contact you?"
-          answer="<p>Feel free to email us at <a href='mailto:ericandsafra2026@gmail.com'>ericandsafra2026@gmail.com</a> or contact us here. We’re happy to help with anything you’re unsure about.</p>"
+          answer="<p>Feel free to email us at <a href='mailto:ericandsafra2026@gmail.com'>ericandsafra2026@gmail.com</a> or contact us <a href='#contact-form' data-scroll-to>here</a>. We’re happy to help with anything you’re unsure about.</p>"
         />
       </div>
     </div>

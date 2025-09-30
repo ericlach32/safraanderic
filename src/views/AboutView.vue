@@ -1,10 +1,32 @@
 <script setup>
+import { onMounted } from 'vue'
 import Hero from '../components/Hero.vue'
 import ImageAndCopy from '../components/ImageAndCopy.vue'
 import ImageCarousel from '../components/ImageCarousel.vue'
 import Faq from '../components/Faq.vue'
 import Countdown from '@/components/Countdown.vue';
 import ContactForm from '@/components/ContactForm.vue';
+
+// Handle smooth scrolling for data-scroll-to links
+onMounted(() => {
+  const scrollToLinks = document.querySelectorAll('[data-scroll-to]')
+  
+  scrollToLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault()
+      const targetId = link.getAttribute('href')
+      const targetElement = document.querySelector(targetId)
+      
+      if (targetElement) {
+        // Use smooth scrolling without router animation conflicts
+        targetElement.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        })
+      }
+    })
+  })
+})
 </script>
 
 <template>
@@ -42,7 +64,7 @@ import ContactForm from '@/components/ContactForm.vue';
       imageMobileUrl="/safra-and-eric-bw.jpg"
       imageMobileAlt="Safra and Eric"
       mobilePosition="top"
-      desktopPosition="left"
+      desktopPosition="right"
     />
     <ImageCarousel
       imageUrl="/safra-and-eric-heads.jpg"
@@ -50,7 +72,6 @@ import ContactForm from '@/components/ContactForm.vue';
       image3Url="/safra-and-eric-hands.jpg"
       imageAlt="Safra and Eric"
     />
-    <ContactForm />
     <div class="faq">
       <div class="faq__header">
         <h2>Frequently Asked Questions</h2>
@@ -110,7 +131,7 @@ import ContactForm from '@/components/ContactForm.vue';
         />
         <Faq 
           question="What should I do if I know I can’t attend now?"
-          answer="<p>We will miss you! If you already know you will not be able to join us, feel free to reach out early so we can plan accordingly. You can contact us here or at <a href='mailto:ericandsafra2026@gmail.com'>ericandsafra2026@gmail.com</a>.</p>"
+          answer="<p>We will miss you! If you already know you will not be able to join us, feel free to reach out early so we can plan accordingly. You can contact us <a href='#contact-form' data-scroll-to>here</a> or at <a href='mailto:ericandsafra2026@gmail.com'>ericandsafra2026@gmail.com</a>.</p>"
         />
         <Faq 
           question="Can I request a specific meal or note dietary restrictions?"
@@ -126,5 +147,6 @@ import ContactForm from '@/components/ContactForm.vue';
         />
       </div>
     </div>
+    <ContactForm />
   </div>
 </template>

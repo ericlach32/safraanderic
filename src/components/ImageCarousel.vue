@@ -43,10 +43,21 @@ onMounted(async () => {
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
+      dynamicBullets: false,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '"></span>';
+      },
     },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+    },
+    on: {
+      slideChange: function () {
+        // Force pagination update on slide change
+        this.pagination.render();
+        this.pagination.update();
+      },
     },
     breakpoints: {
       768: {

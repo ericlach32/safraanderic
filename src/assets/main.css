@@ -508,6 +508,10 @@ html {
   border-bottom: 0.075rem solid;
 }
 
+.faq__toggle {
+  margin-top: 32px;
+}
+
 .colors {
   display: flex;
   flex-direction: column;

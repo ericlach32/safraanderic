@@ -23,7 +23,7 @@ function setVh() {
 
 onMounted(() => {
   setVh();
-  window.addEventListener('resize', setVh);
+  // window.addEventListener('resize', setVh);
 });
 </script>
 

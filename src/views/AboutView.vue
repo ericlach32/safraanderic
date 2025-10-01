@@ -132,17 +132,6 @@ onMounted(() => {
       customClass="hero--about"
     />
     <Countdown />
-    <!-- <ImageAndCopy
-      heading="Our Story"
-      subheading="We're simply meant to be."
-      copy="<p>You know something? We are really cool and you know it. I know you know it. We're really really cool and you know it. We're really cool and you know it. We're really cool and you know it. I know it, yes I do. We're really cool and you know it. We're unbelievably really cool and you know it. We're <b>really cool</b> and you know it. We're really cool and you know it.</p>"
-      imageUrl="/safra-and-eric-bw.jpg"
-      imageAlt="Safra and Eric"
-      imageMobileUrl="/safra-and-eric-bw.jpg"
-      imageMobileAlt="Safra and Eric"
-      mobilePosition="bottom"
-      desktopPosition="right"
-    /> -->
     <ImageAndCopy
       heading="Our Story"
       subheading="We're simply meant to be."

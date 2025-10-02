@@ -120,8 +120,8 @@ onMounted(() => {
 <template>
   <div class="container">
     <Hero
-      heading="About Us"
-      subheading="Now & Forever"
+      heading="Information"
+      subheading="Be Our Guest"
       imageUrl="/fall-canal.jpg"
       imageAlt="Stonefields Estate"
       imageMobileUrl="/fall-canal.jpg"
@@ -133,9 +133,9 @@ onMounted(() => {
     />
     <Countdown />
     <ImageAndCopy
-      heading="Our Story"
-      subheading="We're simply meant to be."
-      copy="<p>You know something? We are really cool and you know it. I know you know it. We're really really cool and you know it. We're really cool and you know it. We're really cool and you know it. I know it, yes I do. We're really cool and you know it. We're unbelievably really cool and you know it. We're <b>really cool</b> and you know it. We're really cool and you know it.</p>"
+      heading="Our Wedding"
+      subheading="Now & Forever"
+      copy="<p>On November 1, 2024, Eric proposed to Safra in New York while they were dressed as Jack and Sally from The Nightmare Before Christmas.</p><p>As the countdown to the wedding begins, they’d love for you to be part of this celebration. Below you’ll find everything you need to know about the wedding weekend – where to stay, what to expect, and how the celebrations will unfold.</p>"
       imageUrl="/safra-and-eric-bw.jpg"
       imageAlt="Safra and Eric"
       imageMobileUrl="/safra-and-eric-bw.jpg"

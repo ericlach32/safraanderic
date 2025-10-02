@@ -303,6 +303,15 @@ html {
   }
 }
 
+.image-and-copy__content p:not(:first-child) {
+  margin-top: 16px;
+}
+
+.image-and-copy__cta {
+  margin-top: 24px;
+  width: fit-content !important;
+}
+
 .image-and-copy__image-wrapper {
 
 }
@@ -660,8 +669,9 @@ html {
 
 .btn {
   position: relative;
+  display: block;
   width: 100%;
-  padding: 16px;
+  padding: 16px 32px;
   border-radius: 32px;
   border: 2px solid var(--color-antique-white);
   background-color: var(--color-antique-white);
@@ -672,6 +682,8 @@ html {
   font-style: normal;
   font-size: 18px;
   line-height: 1;
+  text-decoration: none;
+  text-align: center;
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }

@@ -22,7 +22,9 @@ import ImageCarousel from '../components/ImageCarousel.vue'
       <ImageAndCopy
         heading="Our Story"
         subheading="We're simply meant to be."
-        copy="<p>You know something? We are really cool and you know it. I know you know it. We're really really cool and you know it. We're really cool and you know it. We're really cool and you know it. I know it, yes I do. We're really cool and you know it. We're unbelievably really cool and you know it. We're <b>really cool</b> and you know it. We're really cool and you know it.</p>"
+        copy="<p>Safra and Eric’s story began in September 2021, when they first connected over a shared love of music and movies (shoutout to <i>The Turning Point</i>). On Halloween night, while watching John Carpenter’s <i>Halloween</i>, Eric asked Safra to be his partner. From that moment, they’ve been inseparable.</p><p>Five years after that first Halloween together, they will say “I do” on October 31, 2026 in Beckwith, Ontario, surrounded by the love of family and friends.</p>"
+        ctaUrl="/about"
+        ctaText="Learn More"
         imageUrl="/safra-and-eric-ny-1.jpg"
         imageAlt="Safra and Eric"
         imageMobileUrl="/safra-and-eric-ny-1.jpg"

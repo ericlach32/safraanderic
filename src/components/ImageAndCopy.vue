@@ -1,4 +1,6 @@
 <script setup>
+import { RouterLink } from 'vue-router'
+
 defineProps({
   heading: {
     type: String,
@@ -11,6 +13,14 @@ defineProps({
   copy: {
     type: String,
     required: true,
+  },
+  ctaUrl: {
+    type: String,
+    required: false,
+  },
+  ctaText: {
+    type: String,
+    required: false,
   },
   imageUrl: {
     type: String,
@@ -57,6 +67,12 @@ defineProps({
         <h2>{{ heading }}</h2>
         <h3>{{ subheading }}</h3>
         <div v-html="copy"></div>
+        <RouterLink
+          v-if="ctaUrl"
+          v-html="ctaText"
+          :to="ctaUrl"
+          class="image-and-copy__cta btn">
+        </RouterLink>
       </div>
       <div class="image-and-copy__image-wrapper">
         <img 

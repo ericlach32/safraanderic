@@ -42,17 +42,30 @@ const mapContainer = ref(null)
 const map = ref(null)
 const marker = ref(null)
 const geocoder = ref(null)
+const infoWindow = ref(null)
 const isLoading = ref(true)
 const error = ref(null)
 
-// Load Google Maps API
-const loadGoogleMapsAPI = () => {
-  return new Promise((resolve, reject) => {    
-    if (window.google && window.google.maps) {
-      resolve()
-      return
-    }
+// Generate unique ID for this map instance
+const mapId = ref(`map-${Math.random().toString(36).substr(2, 9)}`)
 
+// Global API loading state to prevent multiple script loads
+let apiLoadingPromise = null
+
+// Load Google Maps API (singleton pattern to prevent multiple loads)
+const loadGoogleMapsAPI = () => {
+  // If API is already loaded, resolve immediately
+  if (window.google && window.google.maps) {
+    return Promise.resolve()
+  }
+
+  // If API is currently loading, return the existing promise
+  if (apiLoadingPromise) {
+    return apiLoadingPromise
+  }
+
+  // Create new loading promise
+  apiLoadingPromise = new Promise((resolve, reject) => {
     const script = document.createElement('script')
     script.src = `https://maps.googleapis.com/maps/api/js?key=${props.apiKey}&libraries=places`
     script.async = true
@@ -64,11 +77,14 @@ const loadGoogleMapsAPI = () => {
     }
     script.onerror = (error) => {
       console.error('Failed to load Google Maps API:', error)
+      apiLoadingPromise = null // Reset so we can try again
       reject(new Error('Failed to load Google Maps API'))
     }
     
     document.head.appendChild(script)
   })
+
+  return apiLoadingPromise
 }
 
 // Initialize the map
@@ -92,11 +108,13 @@ const initializeMap = async () => {
     }
 
     if (!mapContainer.value) {
-      console.error('Map container not found after', maxAttempts, 'attempts')
+      console.error(`Map container not found for ${mapId.value} after`, maxAttempts, 'attempts')
       error.value = 'Map container not found'
       isLoading.value = false
       return
     }
+
+    console.log(`Initializing map ${mapId.value} for address: ${props.address}`)
     
     // Initialize geocoder
     geocoder.value = new google.maps.Geocoder()
@@ -150,16 +168,16 @@ const initializeMap = async () => {
           </div>
         `
 
-        // Add info window
-        const infoWindow = new google.maps.InfoWindow({
+        // Create unique info window for this map instance
+        infoWindow.value = new google.maps.InfoWindow({
           content: infoWindowContent
         })
 
         marker.value.addListener('click', () => {
-          infoWindow.open(map.value, marker.value)
+          infoWindow.value.open(map.value, marker.value)
         })
 
-        console.log('Map initialized successfully')
+        console.log(`Map ${mapId.value} initialized successfully`)
         isLoading.value = false
       } else {
         console.error('Geocoding failed:', status)
@@ -221,6 +239,7 @@ onMounted(() => {
     <div class="map__container">
       <div 
         ref="mapContainer"
+        :id="mapId"
         class="map__element"
         v-show="!isLoading && !error"
       ></div>

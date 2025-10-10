@@ -6,6 +6,7 @@ import ImageCarousel from '../components/ImageCarousel.vue'
 import Faq from '../components/Faq.vue'
 import Countdown from '@/components/Countdown.vue'
 import ContactForm from '@/components/ContactForm.vue'
+import Map from '@/components/Map.vue'
 
 // FAQ expansion state
 const showAllFaqs = ref(false)
@@ -42,11 +43,11 @@ const faqData = [
   },
   {
     question: "Are there hotel blocks or suggested places to stay?",
-    answer: "<p>Yes, please see <a href='#'>Accommodations / Travel</a>.</p>"
+    answer: "<p>Yes, please see <a href='#accommodations' data-scroll-to>Accommodations / Travel</a>.</p>"
   },
   {
     question: "What's the closest airport / train station?",
-    answer: "<p>The closest airport is Ottawa International Airport (YOW) – about an hour's drive from the venue.</p><p>The closest train station is Ottawa Train Station – about an hour's drive from the venue.</p><p>For more information, see <a href='#'>Accommodations / Travel</a>.</p>"
+    answer: "<p>The closest airport is Ottawa International Airport (YOW) – about an hour's drive from the venue.</p><p>The closest train station is Ottawa Train Station – about an hour's drive from the venue.</p><p>For more information, see <a href='#accommodations' data-scroll-to>Accommodations / Travel</a>.</p>"
   },
   {
     question: "Is there transportation to and from the venue?",
@@ -175,6 +176,12 @@ onMounted(() => {
       image2Url="/safra-and-eric-ny-2.jpg"
       image3Url="/safra-and-eric-ny-4.jpg"
       imageAlt="Safra and Eric"
+    />
+    <Map
+      header="Accommodations / Travel"
+      heading="Comfort Inn & Suites"
+      subheading="355 McNeely Ave, Carleton Place, ON"
+      address="Comfort Inn & Suites, 355 McNeely Ave, Carleton Place, ON K7C 0A1"
     />
     <ContactForm />
   </div>

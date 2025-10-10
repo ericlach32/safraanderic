@@ -11,6 +11,9 @@ const props = defineProps({
   subheading: {
     type: String
   },
+  copy: {
+    type: String
+  },
   address: {
     type: String,
     required: true,
@@ -213,7 +216,7 @@ onMounted(() => {
     <div class="map__content">
       <h3>{{ heading }}</h3>
       <h4>{{ subheading }}</h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo facilis, repellat reprehenderit cumque fugit voluptates deserunt nihil nesciunt sed.</p>
+      <div v-html="copy"></div>
     </div>
     <div class="map__container">
       <div 

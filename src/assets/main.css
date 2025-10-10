@@ -740,6 +740,10 @@ html {
     flex-direction: row;
     align-items: center;
   }
+
+  .map + .map {
+    flex-direction: row-reverse;
+  }
 }
 
 .map__content {
@@ -795,6 +799,25 @@ html {
   margin-top: 16px;
 }
 
+.map__content ul {
+
+}
+
+.map__content li {
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+  .map__content li {
+    font-size: 21px;
+  }
+}
+
 .map__container {
   position: relative;
   flex: 1;
@@ -807,7 +830,7 @@ html {
 
 @media (min-width: 768px) {
   .map__element {
-    height: 400px;
+    height: 600px;
   }
 }
 

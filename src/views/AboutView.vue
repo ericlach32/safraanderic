@@ -181,8 +181,16 @@ onMounted(() => {
       header="Accommodations / Travel"
       heading="Comfort Inn & Suites"
       subheading="355 McNeely Ave, Carleton Place, ON"
+      copy="<p>We’ve reserved a block of rooms under Eric & Safra at <b>$220 per night</b>.</p><p>Room options include:</p><ul><li>1 King Bed</li><li>2 Queen Beds</li></ul><p>This hotel is ideal for guests driving to the wedding. If you’re flying or taking the train in, this hotel is not recommended, as rideshares and taxis in town are very limited.</p><p>A shuttle will take you to the wedding and bring you back afterward, so you can celebrate worry-free.</p><p>Online booking opens <b>October 31, 2025</b>.</p>"
       name="Comfort Inn & Suites"
       address="355 McNeely Ave, Carleton Place, ON K7C 0A1"
+    />
+    <Map
+      heading="Homewood Suites by Hilton"
+      subheading="900 Great Lakes Ave, Kanata, ON K2K 0L4"
+      copy="<p>We’ve reserved a block of suites under Eric & Safra at <b>15% off per night</b>.</p><p>All rooms are spacious suites with full kitchens and fridges. Options include:</p><ul><li>2 Queen Beds</li><li>1 King Bed</li><li>2-Room Suites</li></ul><p>This hotel is recommended for guests taking the train or flying in. You cannot get an Uber or Lyft to the Carleton Place hotel from Ottawa and taxis are limited coming out of Carleton Place. There are plenty of shops and restaurants within walking distance from the hotel.</p><p>A shuttle will take you to the wedding and bring you back to the hotel afterward, so you can celebrate worry-free.</p><p>Online booking opens <b>October 31, 2025</b>.</p>"
+      name="Homewood Suites by Hilton"
+      address="900 Great Lakes Ave, Kanata, ON K2K 0L4"
     />
     <ContactForm />
   </div>

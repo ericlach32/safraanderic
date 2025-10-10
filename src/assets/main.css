@@ -688,6 +688,11 @@ html {
   transition: 0.3s ease-in-out;
 }
 
+.btn--small {
+  padding: 8px 12px;
+  font-size: 16px;
+}
+
 .btn:hover {
   background-color: var(--color-navy-black);
   color: var(--color-antique-white);
@@ -700,8 +705,14 @@ html {
 
 .map-header {
   padding-top: 96px;
-  margin-bottom: 96px;
+  margin-bottom: 48px;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .map-header {
+    margin-bottom: 96px;
+  }
 }
 
 .map-header h2 {
@@ -801,7 +812,37 @@ html {
 }
 
 .map__info {
+  padding-top: 12px;
   color: var(--color-navy-black);
+}
+
+.map__info-header {
+  margin-bottom: 8px;
+}
+
+.map__info-title {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.map__info-body {
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.map__info .btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  margin-top: 12px;
 }
 
 .map__loading,
@@ -841,6 +882,24 @@ html {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+.map .gm-style-iw-chr {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.map .gm-style-iw-d {
+  max-height: none !important;
+  min-height: 115px;
+  min-height: 138px;
+}
+
+@media (min-width: 768px) {
+  .map .gm-style-iw-d {
+    min-height: 115px;
+  }
 }
 
 .visually-hidden {

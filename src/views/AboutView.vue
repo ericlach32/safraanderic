@@ -181,7 +181,8 @@ onMounted(() => {
       header="Accommodations / Travel"
       heading="Comfort Inn & Suites"
       subheading="355 McNeely Ave, Carleton Place, ON"
-      address="Comfort Inn & Suites, 355 McNeely Ave, Carleton Place, ON K7C 0A1"
+      name="Comfort Inn & Suites"
+      address="355 McNeely Ave, Carleton Place, ON K7C 0A1"
     />
     <ContactForm />
   </div>

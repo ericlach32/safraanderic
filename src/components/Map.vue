@@ -16,6 +16,10 @@ const props = defineProps({
     required: true,
     default: 'New York, NY'
   },
+  name: {
+    type: String,
+    default: ''
+  },
   zoom: {
     type: Number,
     default: 14
@@ -118,13 +122,34 @@ const initializeMap = async () => {
         marker.value = new google.maps.Marker({
           position: location,
           map: map.value,
-          title: props.address,
+          title: props.name || props.address,
           animation: google.maps.Animation.DROP
         })
 
+        // Create info window content
+        const infoWindowContent = `
+          <div class="map__info">
+            <div class="map__info-header">
+              <h4 class="map__info-title">${props.name || 'Location'}</h4>
+            </div>
+            <div class="map__info-body">
+              <p class="map__info-address">${props.address}</p>
+              <a href="https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(props.address)}" 
+                 target="_blank" 
+                 class="btn btn--small">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                Get Directions
+              </a>
+            </div>
+          </div>
+        `
+
         // Add info window
         const infoWindow = new google.maps.InfoWindow({
-          content: `<div class="map__info"><strong>${props.address}</strong></div>`
+          content: infoWindowContent
         })
 
         marker.value.addListener('click', () => {

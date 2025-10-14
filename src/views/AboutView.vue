@@ -59,7 +59,7 @@ const faqData = [
   },
   {
     question: "Are kids invited?",
-    answer: "<p>We love your little ones, but this will be an adults-only celebration with the exception of close cousins. Your Invitation reflects exactly who is invited, we hope this gives parents a chance to relax and enjoy a night out.</p>"
+    answer: "<p>We love your little ones, but this will be an adults-only celebration with the exception of close cousins. Your invitation reflects exactly who is invited, we hope this gives parents a chance to relax and enjoy a night out.</p>"
   },
   {
     question: "When will wedding invitations come out?",
@@ -187,7 +187,7 @@ onMounted(() => {
     />
     <Map
       heading="Homewood Suites by Hilton"
-      subheading="900 Great Lakes Ave, Kanata, ON K2K 0L4"
+      subheading="900 Great Lakes Ave, Kanata, ON"
       copy="<p>We’ve reserved a block of suites under Eric & Safra at <b>15% off per night</b>.</p><p>All rooms are spacious suites with full kitchens and fridges. Options include:</p><ul><li>2 Queen Beds</li><li>1 King Bed</li><li>2-Room Suites</li></ul><p>This hotel is recommended for guests taking the train or flying in. You cannot get an Uber or Lyft to the Carleton Place hotel from Ottawa and taxis are limited coming out of Carleton Place. There are plenty of shops and restaurants within walking distance from the hotel.</p><p>A shuttle will take you to the wedding and bring you back to the hotel afterward, so you can celebrate worry-free.</p><p>Online booking opens <b>October 31, 2025</b>.</p>"
       name="Homewood Suites by Hilton"
       address="900 Great Lakes Ave, Kanata, ON K2K 0L4"

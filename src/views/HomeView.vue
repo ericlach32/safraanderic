@@ -33,9 +33,17 @@ import ImageCarousel from '../components/ImageCarousel.vue'
         desktopPosition="right"
       />
       <ImageCarousel
-        imageUrl="/safra-and-eric-ny-3.jpg"
-        image2Url="/safra-and-eric-ny-2.jpg"
-        image3Url="/safra-and-eric-ny-4.jpg"
+        imageUrl="/safra-and-eric-memory-1.jpg"
+        image2Url="/safra-and-eric-memory-3.jpg"
+        image3Url="/safra-and-eric-memory-2.jpg"
+        image4Url="/safra-and-eric-memory-4.jpg"
+        image5Url="/safra-and-eric-memory-5.jpg"
+        image6Url="/safra-and-eric-memory-6.jpg"
+        image7Url="/safra-and-eric-memory-7.jpg"
+        image8Url="/safra-and-eric-memory-8.jpg"
+        image9Url="/safra-and-eric-memory-9.jpg"
+        image10Url="/safra-and-eric-memory-11.jpg"
+        image11Url="/safra-and-eric-memory-10.jpg"
         imageAlt="Safra and Eric"
       />
     </div>

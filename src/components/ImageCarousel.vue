@@ -18,6 +18,34 @@ defineProps({
     type: String,
     required: false,
   },
+  image5Url: {
+    type: String,
+    required: false,
+  },
+  image6Url: {
+    type: String,
+    required: false,
+  },
+  image7Url: {
+    type: String,
+    required: false,
+  },
+  image8Url: {
+    type: String,
+    required: false,
+  },
+  image9Url: {
+    type: String,
+    required: false,
+  },
+  image10Url: {
+    type: String,
+    required: false,
+  },
+  image11Url: {
+    type: String,
+    required: false,
+  },
   imageAlt: {
     type: String,
     required: false,
@@ -76,7 +104,7 @@ onMounted(async () => {
   <div class="image-carousel">
     <div class="swiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">
+        <div class="swiper-slide" v-if="imageUrl">
           <div class="image-carousel__slide">
             <img
               v-if="imageUrl"
@@ -86,7 +114,7 @@ onMounted(async () => {
             />
           </div>
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide" v-if="image2Url">
           <div class="image-carousel__slide">
             <img
               v-if="image2Url"
@@ -96,11 +124,91 @@ onMounted(async () => {
             />
           </div>
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide" v-if="image3Url">
           <div class="image-carousel__slide">
             <img
               v-if="image3Url"
               :src="image3Url"
+              :alt="imageAlt"
+              class="image-carousel__image"
+            />
+          </div>
+        </div>
+        <div class="swiper-slide" v-if="image4Url">
+          <div class="image-carousel__slide">
+            <img
+              v-if="image4Url"
+              :src="image4Url"
+              :alt="imageAlt"
+              class="image-carousel__image"
+            />
+          </div>
+        </div>
+        <div class="swiper-slide" v-if="image5Url">
+          <div class="image-carousel__slide">
+            <img
+              v-if="image5Url"
+              :src="image5Url"
+              :alt="imageAlt"
+              class="image-carousel__image"
+            />
+          </div>
+        </div>
+        <div class="swiper-slide" v-if="image6Url">
+          <div class="image-carousel__slide">
+            <img
+              v-if="image6Url"
+              :src="image6Url"
+              :alt="imageAlt"
+              class="image-carousel__image"
+            />
+          </div>
+        </div>
+        <div class="swiper-slide" v-if="image7Url">
+          <div class="image-carousel__slide">
+            <img
+              v-if="image7Url"
+              :src="image7Url"
+              :alt="imageAlt"
+              class="image-carousel__image"
+            />
+          </div>
+        </div>
+        <div class="swiper-slide" v-if="image8Url">
+          <div class="image-carousel__slide">
+            <img
+              v-if="image8Url"
+              :src="image8Url"
+              :alt="imageAlt"
+              class="image-carousel__image"
+            />
+          </div>
+        </div>
+        <div class="swiper-slide" v-if="image9Url">
+          <div class="image-carousel__slide">
+            <img
+              v-if="image9Url"
+              :src="image9Url"
+              :alt="imageAlt"
+              class="image-carousel__image"
+            />
+          </div>
+        </div>
+        <div class="swiper-slide" v-if="image10Url">
+          <div class="image-carousel__slide">
+            <img
+              v-if="image10Url"
+              :src="image10Url"
+              :alt="imageAlt"
+              class="image-carousel__image"
+            />
+          </div>
+        </div>
+        <div class="swiper-slide" v-if="image11Url">
+          <div class="image-carousel__slide">
+            <img
+              v-if="image11Url"
+              :src="image11Url"
               :alt="imageAlt"
               class="image-carousel__image"
             />

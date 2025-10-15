@@ -288,6 +288,10 @@ html {
   line-height: 1;
 }
 
+.image-and-copy__copy {
+  margin-top: 24px;
+}
+
 .image-and-copy__content p {
   font-family: "Cormorant Garamond", serif;
   font-optical-sizing: auto;
@@ -351,6 +355,14 @@ html {
 @media (min-width: 768px) {
   .image-and-copy__image--mobile {
     display: none
+  }
+}
+
+@media (min-width: 768px) {
+  .image-and-copy__container--vertical-stairs .image-and-copy__image {
+    max-height: 768px;
+    object-fit: cover;
+    object-position: 50% 28%;
   }
 }
 

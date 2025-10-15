@@ -34,6 +34,9 @@ onMounted(async () => {
   swiper = new Swiper('.swiper', {
     slidesPerView: 'auto',
     spaceBetween: 24,
+    mousewheel: {
+      forceToAxis: true,
+    },
     // centeredSlides: true,
     // loop: true,
     // autoplay: {

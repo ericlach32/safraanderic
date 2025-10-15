@@ -65,8 +65,8 @@ defineProps({
       ]">
       <div class="image-and-copy__content">
         <h2>{{ heading }}</h2>
-        <h3>{{ subheading }}</h3>
-        <div v-html="copy"></div>
+        <h3 v-if="subheading">{{ subheading }}</h3>
+        <div class="image-and-copy__copy" v-html="copy"></div>
         <RouterLink
           v-if="ctaUrl"
           v-html="ctaText"

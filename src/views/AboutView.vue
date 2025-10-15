@@ -192,6 +192,17 @@ onMounted(() => {
       name="Homewood Suites by Hilton"
       address="900 Great Lakes Ave, Kanata, ON K2K 0L4"
     />
+    <ImageAndCopy
+      customClass="image-and-copy__container--vertical-stairs"
+      heading="Getting There"
+      copy="<p><b>By Car: </b>From Toronto, the drive to Beckwith/Carleton Place is about 4.5 hours. The most direct route is along Highway 401 East toward Ottawa, then Highway 416 North, and finally Highway 7 West to Carleton Place. Parking is available at both hotels as well as onsite at the venue, with the option to leave your car overnight.</p><p><b>By Plane: </b>The closest airport is Ottawa/Macdonald–Cartier International Airport (YOW). Direct flights are available from Toronto with Air Canada, Porter, and WestJet.</p><p>For our international guests, please note that Ottawa’s airport is smaller than most. You will likely need to connect through Toronto or Montreal to reach Ottawa.</p><p><b>By Train: </b>Via Rail offers services from Toronto to Ottawa, with the journey taking around 4.5 hours. From Ottawa’s train station, Beckwith/Carleton Place is about a 45-minute drive, so you will need to arrange a car rental or taxi / rideshare to reach your hotel or the venue.</p>"
+      imageUrl="/safra-and-eric-vertical-stairs.jpg"
+      imageAlt="Safra and Eric"
+      imageMobileUrl="/safra-and-eric-vertical-stairs.jpg"
+      imageMobileAlt="Safra and Eric"
+      mobilePosition="bottom"
+      desktopPosition="right"
+    />
     <ContactForm />
   </div>
 </template>

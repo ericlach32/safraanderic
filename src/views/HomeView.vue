@@ -46,6 +46,9 @@ import ImageCarousel from '../components/ImageCarousel.vue'
         image11Url="/safra-and-eric-memory-10.jpg"
         imageAlt="Safra and Eric"
       />
+      <div class="footer">
+        <p>Safra & Eric</p>
+      </div>
     </div>
   </main>
 </template>

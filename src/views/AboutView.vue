@@ -181,7 +181,7 @@ onMounted(() => {
       header="Accommodations / Travel"
       heading="Comfort Inn & Suites"
       subheading="355 McNeely Ave, Carleton Place, ON"
-      copy="<p>We’ve reserved a block of rooms under Eric & Safra at <b>$220 per night</b>.</p><p>Room options include:</p><ul><li>1 King Bed</li><li>2 Queen Beds</li></ul><p>This hotel is ideal for guests driving to the wedding. If you’re flying or taking the train in, this hotel is not recommended, as rideshares and taxis in town are very limited.</p><p>A shuttle will take you to the wedding and bring you back afterward, so you can celebrate worry-free.</p><p>Online booking opens <b>October 31, 2025</b>.</p>"
+      copy="<p>We’ve reserved a block of rooms under Eric & Safra at <b>$220 per night</b>.</p><p>Room options include:</p><ul><li>1 King Bed</li><li>2 Queen Beds</li></ul><p>This hotel is ideal for guests driving to the wedding. If you’re flying or taking the train in, this hotel is not recommended, as rideshares and taxis in town are very limited.</p><p>A shuttle will take you to the wedding and bring you back afterward, so you can celebrate worry-free.</p><p>Online booking opens <b>November 16, 2025</b>.</p><p>If you’d like to book before then, you can book by phone at <a href='tel:6132160079'>(613) 216-0079</a>. Ask for a room under the Eric & Safra wedding block.</p>"
       name="Comfort Inn & Suites"
       address="355 McNeely Ave, Carleton Place, ON K7C 0A1"
     />
@@ -204,5 +204,8 @@ onMounted(() => {
       desktopPosition="right"
     />
     <ContactForm />
+    <div class="footer">
+      <p>Safra & Eric</p>
+    </div>
   </div>
 </template>

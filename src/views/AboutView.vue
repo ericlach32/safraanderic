@@ -31,7 +31,7 @@ const faqData = [
   },
   {
     question: "What colours should I avoid wearing?",
-    answer: "<p>We will be having a multi-cultural wedding, the bride will be wearing a white dress with red accessories. Red in Pakistani weddings symbolizes love, prosperity, and new beginnings. Please refrain from wearing red or white.</p><p>Our bridesmaids will be in burnt orange. Please also refrain from wearing a long dress in that colour.</p>"
+    answer: "<p>We will be having a multi-cultural wedding, the bride will be wearing a white dress with red accessories. Red in Pakistani weddings symbolizes love, prosperity, and new beginnings. Please refrain from wearing white or champagne.</p><p>Our bridesmaids will be in burnt orange. Please also refrain from wearing a long dress in that colour.</p>"
   },
   {
     question: "Will all events be in the same location?",
@@ -188,7 +188,7 @@ onMounted(() => {
     <Map
       heading="Homewood Suites by Hilton"
       subheading="900 Great Lakes Ave, Kanata, ON"
-      copy="<p>We’ve reserved a block of suites under Eric & Safra at <b>15% off per night</b>.</p><p>All rooms are spacious suites with full kitchens and fridges. Options include:</p><ul><li>2 Queen Beds</li><li>1 King Bed</li><li>2-Room Suites</li></ul><p>This hotel is recommended for guests taking the train or flying in. You cannot get an Uber or Lyft to the Carleton Place hotel from Ottawa and taxis are limited coming out of Carleton Place. There are plenty of shops and restaurants within walking distance from the hotel.</p><p>A shuttle will take you to the wedding and bring you back to the hotel afterward, so you can celebrate worry-free.</p><p>Online booking opens <b>October 31, 2025</b>.</p>"
+      copy="<p>We’ve reserved a block of suites under Eric & Safra at <b>15% off per night</b>.</p><p>All rooms are spacious suites with full kitchens and fridges. Options include:</p><ul><li>2 Queen Beds</li><li>1 King Bed</li><li>2-Room Suites</li></ul><p>This hotel is recommended for guests taking the train or flying in. You cannot get an Uber or Lyft to the Carleton Place hotel from Ottawa and taxis are limited coming out of Carleton Place. There are plenty of shops and restaurants within walking distance from the hotel.</p><p>A shuttle will take you to the wedding and bring you back to the hotel afterward, so you can celebrate worry-free.</p><p>Online booking is open now: <a href='https://group.homewood-suites.com/myrf6s' target='_blank'>https://group.homewood-suites.com/myrf6s</a></p>"
       name="Homewood Suites by Hilton"
       address="900 Great Lakes Ave, Kanata, ON K2K 0L4"
     />

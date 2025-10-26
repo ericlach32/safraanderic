@@ -48,6 +48,12 @@ html {
   padding: var(--header-height) 0 0;
 }
 
+.container--no-height {
+  min-height: 0;
+  padding-top: 0;
+  padding-bottom: 96px;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -420,6 +426,13 @@ html {
 
 .swiper-button-next,
 .swiper-button-prev {
+  width: 40px !important;
+  height: 40px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  background: var(--color-navy-black);
   color: var(--color-antique-white);
   width: 32px;
   height: 32px;

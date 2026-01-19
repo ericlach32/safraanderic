@@ -34,7 +34,7 @@ const props = defineProps({
   },
   apiKey: {
     type: String,
-    default: 'AIzaSyCzcXX1r10Q93mvF2bSVkrASk5bLP5EzKU'
+    default: 'AIzaSyD0hdbodn3_FhCu9_dbz5PkC8iNOmUgsyg'
   },
 })
 

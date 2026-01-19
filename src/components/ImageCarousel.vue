@@ -46,6 +46,10 @@ defineProps({
     type: String,
     required: false,
   },
+  image12Url: {
+    type: String,
+    required: false,
+  },
   imageAlt: {
     type: String,
     required: false,
@@ -209,6 +213,16 @@ onMounted(async () => {
             <img
               v-if="image11Url"
               :src="image11Url"
+              :alt="imageAlt"
+              class="image-carousel__image"
+            />
+          </div>
+        </div>
+        <div class="swiper-slide" v-if="image12Url">
+          <div class="image-carousel__slide">
+            <img
+              v-if="image12Url"
+              :src="image12Url"
               :alt="imageAlt"
               class="image-carousel__image"
             />

@@ -44,6 +44,7 @@ import ImageCarousel from '../components/ImageCarousel.vue'
         image9Url="/safra-and-eric-memory-9.jpg"
         image10Url="/safra-and-eric-memory-11.jpg"
         image11Url="/safra-and-eric-memory-10.jpg"
+        image12Url="/safra-and-eric-memory-12.jpg"
         imageAlt="Safra and Eric"
       />
       <div class="footer">

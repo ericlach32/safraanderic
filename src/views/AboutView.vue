@@ -31,7 +31,7 @@ const faqData = [
   },
   {
     question: "Will all events be in the same location?",
-    answer: "<p>Yes, the ceremony and reception will be in the same venue. We'll share the exact address and timing with the invitation. This information will be added to the website once the invitations go out.</p>"
+    answer: "<p>Yes, the ceremony and reception will be in the same venue.</p>"
   },
   // {
   //   question: "Can I wear black?",

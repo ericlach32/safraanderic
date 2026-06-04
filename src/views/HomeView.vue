@@ -24,7 +24,7 @@ import ImageCarousel from '../components/ImageCarousel.vue'
         subheading="We're simply meant to be."
         copy="<p>Safra and Eric’s story began in September 2021, when they first connected over a shared love of music and movies (shoutout to <i>The Turning Point</i>). On Halloween night, while watching John Carpenter’s <i>Halloween</i>, Eric asked Safra to be his partner. From that moment, they’ve been inseparable.</p><p>Five years after that first Halloween together, they will say “I do” on October 31, 2026 in Beckwith, Ontario, surrounded by the love of family and friends.</p>"
         ctaUrl="/about"
-        ctaText="Learn More"
+        ctaText="Wedding Details"
         imageUrl="/safra-and-eric-ny-1.jpg"
         imageAlt="Safra and Eric"
         imageMobileUrl="/safra-and-eric-ny-1.jpg"

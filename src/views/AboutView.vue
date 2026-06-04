@@ -161,27 +161,6 @@ onMounted(() => {
       mobilePosition="top"
       desktopPosition="left"
     />
-    <div class="faq">
-      <div class="faq__header">
-        <h2>Frequently Asked Questions</h2>
-      </div>
-      <div class="faq__content">
-        <Faq 
-          v-for="faq in displayedFaqs"
-          :key="faq.question"
-          :question="faq.question"
-          :answer="faq.answer"
-        />
-        <div class="faq__toggle">
-          <button 
-            @click="toggleFaqs"
-            class="btn">
-            <span v-if="!showAllFaqs">Read More FAQs</span>
-            <span v-else>Show Less</span>
-          </button>
-        </div>
-      </div>
-    </div>
     <ImageCarousel
       imageUrl="/safra-and-eric-ny-3.jpg"
       image2Url="/safra-and-eric-ny-2.jpg"
@@ -214,6 +193,97 @@ onMounted(() => {
       mobilePosition="bottom"
       desktopPosition="right"
     />
+
+    <!-- TODO: Shuttle -->
+    <div class="shuttle">
+      <div class="shuttle__header">
+        <h2>Shuttle / Parking</h2>
+      </div>
+      <div class="shuttle__content">
+
+        <div class="shuttle__intro">
+          <p>There is plenty of parking at Stonefields Estate, with overnight parking available. If parking at the venue overnight, please pick up your vehicle by <b>12:00 p.m.</b> the following morning.</p>
+          <!-- <p>We love you too much to let you drive after a night on the dance floor – please take the shuttle if you plan to drink. </p> -->
+        </div>
+
+        <div class="shuttle__subheading">
+          <h3>Getting to the Venue</h3>
+          <!-- <p>Parking is available at Stonefields Estate for guests who prefer to drive.</p> -->
+        </div>
+
+        <div class="shuttle__schedule">
+          <div class="shuttle__schedule-block">
+            <h4>Shuttle #1</h4>
+            <ul>
+              <li><b>2:45 p.m.</b> Pick-up: Homewood Suites by Hilton, 900 Great Lakes Avenue Kanata, ON, K2K 0L4</li>
+              <li><b>3:15 p.m.</b> Pick-up: Comfort Inn & Suites, 355 McNeely Avenue Carleton Place, ON, K7C 0A1</li>
+              <li><b>3:30 p.m.</b> Drop-off: Stonefields Estate</li>
+            </ul>
+          </div>
+          <div class="shuttle__schedule-block">
+            <h4>Shuttle #2</h4>
+            <ul>
+              <li><b>3:00 p.m.</b> Pick-up: Homewood Suites by Hilton, 900 Great Lakes Avenue Kanata, ON, K2K 0L4</li>
+              <li><b>3:30 p.m.</b> Pick-up: Comfort Inn & Suites, 355 McNeely Avenue Carleton Place, ON, K7C 0A1</li>
+              <li><b>3:40 p.m.</b> Drop-off: Stonefields Estate</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="shuttle__subheading">
+          <h3>Leaving the Venue</h3>
+          <!-- <p>Parking is available at Stonefields Estate for guests who prefer to drive.</p> -->
+        </div>
+
+        <div class="shuttle__schedule">
+          <div class="shuttle__schedule-block">
+            <h4>Shuttle #1</h4>
+            <ul>
+              <li><b>11:00 p.m.</b> Departure from Stonefields Estate</li>
+              <li><b>11:10 p.m.</b> Drop-off: Comfort Inn & Suites, Carleton Place, ON</li>
+              <li><b>11:30 p.m.</b> Drop-off: Homewood Suites by Hilton, Kanata, ON</li>
+            </ul>
+          </div>
+          <div class="shuttle__schedule-block">
+            <h4>Shuttle #2 & #3</h4>
+            <ul>
+              <li><b>12:45 a.m.</b> Departure from Stonefields Estate</li>
+              <li><b>12:55 a.m.</b> Drop-off: Comfort Inn & Suites, Carleton Place, ON</li>
+              <li><b>1:15 a.m.</b> &nbsp;&nbsp;Drop-off: Homewood Suites by Hilton, Kanata, ON</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="shuttle__outro">
+          <p>Shuttles will depart on time and cannot wait for late guests. No stops will be made between&nbsp;locations.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- TODO: Schedule -->
+
+    <div class="faq">
+      <div class="faq__header">
+        <h2>Frequently Asked Questions</h2>
+      </div>
+      <div class="faq__content">
+        <Faq 
+          v-for="faq in displayedFaqs"
+          :key="faq.question"
+          :question="faq.question"
+          :answer="faq.answer"
+        />
+        <div class="faq__toggle">
+          <button 
+            @click="toggleFaqs"
+            class="btn">
+            <span v-if="!showAllFaqs">Read More FAQs</span>
+            <span v-else>Show Less</span>
+          </button>
+        </div>
+      </div>
+    </div>
     <ContactForm />
     <div class="footer">
       <p>Safra & Eric</p>

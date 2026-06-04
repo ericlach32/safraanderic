@@ -18,7 +18,7 @@ let intervalId = null
 
 const updateTimer = () => {
   const now = new Date().getTime()
-  const target = new Date('2026-10-31T16:00:00Z').getTime()
+  const target = new Date('2026-10-31T16:00:00-04:00').getTime()
   const diff = target - now
 
   if (diff <= 0) {

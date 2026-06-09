@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, onUnmounted, ref, watch, nextTick } from 'vue'
+import { onMounted, onUnmounted, ref, watch, nextTick, computed } from 'vue'
 
 const props = defineProps({
   header: {
@@ -36,7 +36,13 @@ const props = defineProps({
     type: String,
     default: 'AIzaSyD0hdbodn3_FhCu9_dbz5PkC8iNOmUgsyg'
   },
+  openInfoOnLoad: {
+    type: Boolean,
+    default: false
+  },
 })
+
+const showContent = computed(() => props.heading && props.subheading && props.copy)
 
 const mapContainer = ref(null)
 const map = ref(null)
@@ -207,6 +213,12 @@ const initializeMap = async () => {
           infoWindow.value.open(map.value, marker.value)
         })
 
+        if (props.openInfoOnLoad) {
+          google.maps.event.addListenerOnce(map.value, 'idle', () => {
+            infoWindow.value.open(map.value, marker.value)
+          })
+        }
+
         console.log('Map ' + mapId.value + ' initialized successfully')
         isLoading.value = false
       } else {
@@ -311,7 +323,9 @@ onUnmounted(() => {
     <h2 id="accommodations">{{ header }}</h2>
   </div>
   <div class="map">
-    <div class="map__content">
+    <div
+      v-if="showContent"
+      class="map__content">
       <h3>{{ heading }}</h3>
       <h4>{{ subheading }}</h4>
       <div v-html="copy"></div>

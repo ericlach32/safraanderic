@@ -157,6 +157,11 @@ onMounted(() => {
       mobilePosition="top"
       desktopPosition="left"
     />
+    <Map
+      name="Stonefields Estate"
+      address="1985 9th Line, Beckwith, ON K7C 3P2"
+      open-info-on-load
+    />
     <ImageCarousel
       imageUrl="/safra-and-eric-ny-3.jpg"
       image2Url="/safra-and-eric-ny-2.jpg"

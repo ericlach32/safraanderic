@@ -22,12 +22,24 @@ const faqData = [
     answer: "<p>We love your little ones, but this will be an adults-only celebration with the exception of close cousins.</p>"
   },
   {
+    question: "Are there hotel blocks or suggested places to stay?",
+    answer: "<p>Yes, please see <a href='#accommodations' data-scroll-to>Accommodations / Travel</a>.</p>"
+  },
+  {
+    question: "Is there transportation to and from the venue?",
+    answer: "<p>Yes, please see <a href='#shuttle' data-scroll-to>Shuttle / Parking</a>.</p>"
+  },
+  {
     question: "What is the dress code?",
     answer: "<p>Dressy cocktail attire. Guests are welcome to wear Western or South Asian attire</p><p>Think suits (no tuxedos), cocktail to full-length dresses, saris, lehengas, and other polished, festive looks.</p><p>As our venue is mostly grass, we recommend avoiding stilettos. Block heels, wedges, or flats will be the most comfortable choice.</p>"
   },
   {
     question: "Should I be planning on wearing a costume for this Halloween wedding?",
     answer: "<p>No costumes, please! Think moody, romantic, and a little glam instead.</p>"
+  },
+  {
+    question: "What colours should I avoid wearing?",
+    answer: "<p>We kindly ask guests to avoid white, red, and champagne.</p><p>Bridesmaids will be in burnt orange long dresses and groomsmen in solid black, so please also avoid outfits or styling that closely match these looks.</p>"
   },
   {
     question: "Will all events be in the same location?",
@@ -38,24 +50,12 @@ const faqData = [
   //   answer: "<p>Absolutely. Black, deep jewel tones, and dramatic fabrics are totally welcome – and encouraged.</p>"
   // },
   {
-    question: "What colours should I avoid wearing?",
-    answer: "<p>We kindly ask guests to avoid white, red, and champagne.</p><p>Bridesmaids will be in burnt orange long dresses and groomsmen in solid black, so please also avoid outfits or styling that closely match these looks.</p>"
-  },
-  {
     question: "Should I start booking flights or accommodation now?",
     answer: "<p>Yes, especially if you're flying in or coming from out of town. It's a popular time of year so we recommend booking flights and accommodations early to get the best rates.</p>"
   },
   {
-    question: "Are there hotel blocks or suggested places to stay?",
-    answer: "<p>Yes, please see <a href='#accommodations' data-scroll-to>Accommodations / Travel</a>.</p>"
-  },
-  {
     question: "What's the closest airport / train station?",
     answer: "<p>The closest airport is Ottawa International Airport (YOW) – about an hour's drive from the venue.</p><p>The closest train station is Ottawa Train Station – about an hour's drive from the venue.</p><p>For more information, see <a href='#accommodations' data-scroll-to>Accommodations / Travel</a>.</p>"
-  },
-  {
-    question: "Is there transportation to and from the venue?",
-    answer: "<p>Yes, please see <a href='#shuttle' data-scroll-to>Shuttle / Parking</a>.</p>"
   },
   // {
   //   question: "What should I do if I know I can't attend now?",
@@ -66,8 +66,28 @@ const faqData = [
     answer: "<p>Yes! When you RSVP, you'll be able to note any dietary restrictions or allergies. All meat served will be <b>halal</b>, and we'll have vegetarian options as well. We want everyone to feel taken care of.</p>"
   },
   {
+    question: "Will the food be halal?",
+    answer: "<p>Yes! All meat served will be halal, there will be vegetarian options as well.</p>"
+  },
+  {
     question: "Will there be alcohol?",
-    answer: "<p>Yes! There will be a full bar, along with signature drinks to help keep the spirits high all night long.</p>"
+    answer: "<p>Yes, a cash bar will be available throughout the evening, along with signature drinks to help keep the spirits high all night long.</p>"
+  },
+  {
+    question: "When is the RSVP deadline?",
+    answer: "<p>Please RSVP by <b>August 1st</b> via the response card in your invite.</p>"
+  },
+  {
+    question: "When should I arrive at the venue?",
+    answer: "<p>Please arrive between <b>3:15 p.m.</b> and <b>3:50 p.m.</b></p>"
+  },
+  {
+    question: "Is there parking at the venue?",
+    answer: "<p>Yes, there is ample parking available at the venue.</p>"
+  },
+  {
+    question: "Do you have a registry?",
+    answer: "<p>We do not have a registry. The greatest gift of all is your presence on our special day! However, should you wish to contribute to a deposit on our first home, a wedding card can be dropped in the card box at the reception.</p>"
   },
   {
     question: "I have a question not answered here; how do I contact you?",

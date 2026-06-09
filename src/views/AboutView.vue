@@ -61,10 +61,10 @@ const faqData = [
   //   question: "What should I do if I know I can't attend now?",
   //   answer: "<p>We will miss you! If you already know you will not be able to join us, feel free to reach out early so we can plan accordingly. You can contact us <a href='#contact-form' data-scroll-to>here</a> or at <a href='mailto:ericandsafra2026@gmail.com'>ericandsafra2026@gmail.com</a>.</p>"
   // },
-  {
-    question: "Can I request a specific meal or note dietary restrictions?",
-    answer: "<p>Yes! When you RSVP, you'll be able to note any dietary restrictions or allergies. All meat served will be <b>halal</b>, and we'll have vegetarian options as well. We want everyone to feel taken care of.</p>"
-  },
+  // {
+  //   question: "Can I request a specific meal or note dietary restrictions?",
+  //   answer: "<p>Yes! When you RSVP, you'll be able to note any dietary restrictions or allergies. All meat served will be <b>halal</b>, and we'll have vegetarian options as well. We want everyone to feel taken care of.</p>"
+  // },
   {
     question: "Will the food be halal?",
     answer: "<p>Yes! All meat served will be halal, there will be vegetarian options as well.</p>"
@@ -90,12 +90,12 @@ const faqData = [
     answer: "<p>We do not have a registry. The greatest gift of all is your presence on our special day! However, should you wish to contribute to a deposit on our first home, a wedding card can be dropped in the card box at the reception.</p>"
   },
   {
-    question: "I have a question not answered here; how do I contact you?",
-    answer: "<p>Feel free to email us at <a href='mailto:ericandsafra2026@gmail.com'>ericandsafra2026@gmail.com</a> or contact us <a href='#contact-form' data-scroll-to>here</a>. We're happy to help with anything you're unsure about.</p>"
-  },
-  {
     question: "Is the wedding going to be spooky? What are the vibes?",
     answer: "<p>Yes… but make it elegant. Expect subtle Halloween vibes – not jump scares. Think candlelight, autumn air, rich colours, and gothic touches. If you're picturing a haunted house, you're in the wrong movie genre – think Tim Burton meets romance novel.</p>"
+  },
+  {
+    question: "I have a question not answered here; how do I contact you?",
+    answer: "<p>Feel free to email us at <a href='mailto:ericandsafra2026@gmail.com'>ericandsafra2026@gmail.com</a> or contact us <a href='#contact-form' data-scroll-to>here</a>. We're happy to help with anything you're unsure about.</p>"
   }
 ]
 

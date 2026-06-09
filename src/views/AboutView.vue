@@ -31,7 +31,7 @@ const faqData = [
   },
   {
     question: "What is the dress code?",
-    answer: "<p>Dressy cocktail attire. Guests are welcome to wear Western or South Asian attire</p><p>Think suits (no tuxedos), cocktail to full-length dresses, saris, lehengas, and other polished, festive looks.</p><p>As our venue is mostly grass, we recommend avoiding stilettos. Block heels, wedges, or flats will be the most comfortable choice.</p>"
+    answer: "<p>Dressy cocktail attire. Guests are welcome to wear Western or South Asian attire.</p><p>Think suits (no tuxedos), cocktail to full-length dresses, saris, lehengas, and other polished, festive looks.</p><p>As our venue is mostly grass, we recommend avoiding stilettos. Block heels, wedges, or flats will be the most comfortable choice.</p>"
   },
   {
     question: "Should I be planning on wearing a costume for this Halloween wedding?",

@@ -241,14 +241,6 @@ onMounted(() => {
               <li><b>3:30 p.m.</b> Drop-off: Stonefields Estate</li>
             </ul>
           </div>
-          <div class="shuttle__schedule-block">
-            <h4>Shuttle #2</h4>
-            <ul>
-              <li><b>3:00 p.m.</b> Pick-up: Homewood Suites by Hilton, 900 Great Lakes Avenue Kanata, ON, K2K 0L4</li>
-              <li><b>3:30 p.m.</b> Pick-up: Comfort Inn & Suites, 355 McNeely Avenue Carleton Place, ON, K7C 0A1</li>
-              <li><b>3:40 p.m.</b> Drop-off: Stonefields Estate</li>
-            </ul>
-          </div>
         </div>
 
         <div class="shuttle__subheading">
@@ -266,7 +258,7 @@ onMounted(() => {
             </ul>
           </div>
           <div class="shuttle__schedule-block">
-            <h4>Shuttle #2 & #3</h4>
+            <h4>Shuttle #2</h4>
             <ul>
               <li><b>12:45 a.m.</b> Departure from Stonefields Estate</li>
               <li><b>12:55 a.m.</b> Drop-off: Comfort Inn & Suites, Carleton Place, ON</li>

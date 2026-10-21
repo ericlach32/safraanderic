@@ -672,6 +672,11 @@ html {
   margin-bottom: 12px;
 }
 
+.shuttle__notice {
+  margin-top: 16px;
+  font-weight: 700 !important;
+}
+
 .shuttle__subheading {
   margin: 12px 0 16px;
 }

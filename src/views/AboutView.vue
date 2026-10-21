@@ -224,6 +224,7 @@ onMounted(() => {
 
         <div class="shuttle__intro">
           <p>There is plenty of parking at Stonefields Estate, with overnight parking available. If parking at the venue overnight, please pick up your vehicle by <b>12:00 p.m.</b> the following morning.</p>
+          <p class="shuttle__notice">PLEASE NOTE: The shuttle is now full! If you signed up, you’re all set. If not, please plan your own transportation. Thanks for understanding!</p>
           <!-- <p>We love you too much to let you drive after a night on the dance floor – please take the shuttle if you plan to drink. </p> -->
         </div>
 
